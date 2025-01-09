@@ -37,7 +37,8 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         // remote-vue が外部に提供するコンポーネントやモジュールを指定
-        './VueApp': './src/App.vue',
+        // './VueApp': './src/App.vue',
+        './VueApp': './src/ExposedVueApp.js'
       },
       shared: {
         // マイクロフロントエンド間で共有するライブラリ

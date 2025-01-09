@@ -33,7 +33,8 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         // remote-react が外部に提供するコンポーネントやモジュールを指定
-        './ReactApp': './src/App.jsx',
+        // './ReactApp': './src/App.jsx',
+        './ReactApp': './src/ExposedReactApp.js'
       },
       shared: {
         react: {
